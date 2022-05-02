@@ -1,38 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Prompt:wght@400;600&display=swap');
+
+
+:root {
+  --champagne-pink: #f2dfd7;
+  --ghost-white: #fef9ff;
+  --thistle: #d4c1ec;
+  --maximum-blue-purple: #9f9fed;
+  --medium-slate-blue: #736ced;
+  --dark-blue: #110C64;
+}
+
+body {
+  background: var(--champagne-pink);
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+}
+.quotes-card {
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  background: var(--ghost-white);
+  border-radius: 80px;
+}
+button {
+  border: none;
+  padding: 10px;
+  background-color: var(--thistle);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.quote {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 30px;
+  color: var(--medium-slate-blue);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.author, button {
+  color: var(--dark-blue);
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
+}
+
+.author {
+  font-size: 20px;
 }
